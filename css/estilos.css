@@ -23,12 +23,12 @@ body {
 }
 
 /* Cabecera */
-
 .cabecera__container {
     background-color: white;
-    height: 80px;
     width: 100%;
     padding: 0 25px;
+    height: 60px;
+    position: fixed;
 }
 
 .logo__item {
@@ -40,11 +40,11 @@ body {
 
 .buscar__input {
     width: 260px;
-    height: 32px;
-    border: 1px solid rgb(211, 211, 211);
+    height: 36px;
     font-size: 16px;
-    padding: 3px 8px;
+    padding: 6px 12px;
     border: 1px solid rgb(211, 211, 211);
+    color: #444444;
 }
 
 .buscar__label {
@@ -60,36 +60,47 @@ body {
 
 .cabecera__audio {
     background-image: url(../img/cabecera/mic.png);
-    padding: 20px;
-    display: none;
+    padding: 18px;
+    background-size: contain;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 100%;
 }
 
+.cabecera__iconos__item {
+    display: flex;
+    gap: 8px;
+
+    & a {
+        padding: 18px;
+        border-radius: 100%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background  .2s ease-in-out;
+
+        &:hover {
+            background-color: #E5F1FF;
+        }
+    }
+}
 .cabecera__videos {
     background-image: url(../img/cabecera/video_call.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .cabecera__apps {
     background-image: url(../img/cabecera/apps.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
+    /* padding: 13px 30px 13px 13px; */
 }
 
 .cabecera__notificaciones {
     background-image: url(../img/cabecera/notifications.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
+    /* padding: 13px 30px 13px 13px; */
 }
 
 .cabecera__avatar {
     background-image: url(../img/cabecera/Avatar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 13px 30px 13px 13px;
+    /* padding: 13px 30px 13px 13px; */
 }
 
 /* MENU LATERAL */

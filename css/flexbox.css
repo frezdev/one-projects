@@ -1,0 +1,27 @@
+.cabecera__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera__buscar__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & form {
+        display: flex;
+        & .buscar__input {
+            border-radius: 50px 0 0 50px;
+        }
+        & .buscar__label {
+            border-radius: 0 50px 50px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecera__buscar__item {
+        display: none;
+    }
+}
