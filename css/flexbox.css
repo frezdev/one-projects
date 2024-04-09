@@ -59,7 +59,7 @@
 .menu__lista > li {
     display: flex;
     flex-direction: column;
-    padding: 10px 15px;
+    padding: 5px 5px;
 }
 
 .menu__itens {
@@ -102,6 +102,9 @@
         flex-direction: column;
     }
 
+    .menu__lista > li {
+        padding: 10px 15px;
+    }
     .rodapie__container {
         grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
         padding-right: 45px;
