@@ -259,6 +259,7 @@ body {
 .rodapie__container {
     width: 100%;
     padding-block: 30px;
+    padding-inline: 35px;
     color: var(--gris-texto);
     line-height: 1.5;
     font-size: 16px;
