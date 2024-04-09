@@ -109,10 +109,12 @@ body {
     background-color: var(--azul-oscuro);
     font-size: 14px;
     display: none;
+    overflow-y: auto;
 }
 
-.menu__itens:hover {
+.menu__lista > li:hover {
     background-color: var(--azul-medio);
+    border-radius: 10px;
     transition: .5s;
 }
 
@@ -190,6 +192,10 @@ body {
 
 .icono__videojuegos::before {
     content: url(../img/menu/videojuegos.png);
+}
+
+.icono-item {
+    width: 25px;
 }
 
 /* SECCIÓN SUPERIOR */
@@ -283,7 +289,7 @@ body {
 
     .menu__container {
         font-size: 14px;
-        width: 77px;
+        overflow-y: hidden;
     }
 
     .menu__lista {
@@ -292,8 +298,14 @@ body {
 
     .menu__lista li {
         width: 100%;
+        text-align: center;
     }
-
+    .menu__itens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     /* ESTILOS DE LA SECCIÓN SUPERIOR */
 
     .superior__seccion__container {
@@ -332,9 +344,14 @@ body {
         border-bottom: 1.5px solid var(--azul-medio);
     }
 
+    .menu__lista li {
+        width: 100%;
+        text-align: start;
+    }
+
     /* MENU LATERAL*/
     .menu__container {
-        width: 245px;
+        padding-inline: 10px;
     }
 
     /* ESTILOS VIDEOS */
