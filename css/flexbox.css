@@ -20,6 +20,15 @@
     }
 }
 
+/* Superior section */
+
+.superior__seccion__container {
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    gap: 15px;
+}
+
 /* FOOTER */
 
 .rodapie__container {
