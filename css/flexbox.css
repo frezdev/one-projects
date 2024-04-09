@@ -43,7 +43,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     grid-auto-rows: max-content;
-    padding-right: 35px;
     justify-items: center;
     gap: 35px;
 
