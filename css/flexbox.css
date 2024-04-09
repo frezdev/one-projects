@@ -5,7 +5,7 @@
 }
 
 .cabecera__buscar__item {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 8px;
 
@@ -20,8 +20,31 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+/* FOOTER */
+
+.rodapie__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-rows: max-content;
+    padding-right: 35px;
+    justify-items: center;
+    gap: 35px;
+
+
+    & section {
+        min-width: 146px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 830px) {
     .cabecera__buscar__item {
-        display: none;
+        display: flex;
+    }
+
+    .rodapie__container {
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+        padding-right: 45px;
+        gap: 40px;
     }
 }
