@@ -114,7 +114,6 @@ body {
 
 .menu__lista > li:hover {
     background-color: var(--azul-medio);
-    border-radius: 10px;
     transition: .5s;
 }
 
@@ -296,10 +295,6 @@ body {
         padding-top: 15px;
     }
 
-    .menu__lista li {
-        width: 100%;
-        text-align: center;
-    }
     .menu__itens {
         display: flex;
         flex-direction: column;

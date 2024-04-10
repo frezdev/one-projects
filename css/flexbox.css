@@ -34,7 +34,7 @@
 .menu__container {
     position: fixed;
     top: 60px;
-    padding-block: 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     min-height: fit-content;
@@ -60,6 +60,8 @@
     display: flex;
     flex-direction: column;
     padding: 5px 5px;
+    border-radius: 10px;
+    width: 20%;
 }
 
 .menu__itens {
@@ -100,10 +102,13 @@
 
     .menu__lista {
         flex-direction: column;
+        gap: 20px;
     }
 
     .menu__lista > li {
         padding: 10px 15px;
+        text-align: center;
+        width: 100%;
     }
     .rodapie__container {
         grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
