@@ -126,10 +126,27 @@
     .menu__lista {
         gap: 10px;
         padding-block: 10px;
+
+        & .maspagina {
+            order: 1;
+        }
+        & .premium {
+            order: 2;
+        }
+        & .peliculas {
+            order: 3;
+        }
+        & .videojuegos {
+            order: 4;
+        }
+    }
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
     }
     .menu__lista:nth-child(n+2) {
         display: flex;
     }
+
     .menu__itens {
         display: flex;
         align-items: center;
