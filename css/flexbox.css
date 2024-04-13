@@ -87,6 +87,44 @@
     }
 }
 
+.videos__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    column-gap: 20px;
+    row-gap: 30px;
+    justify-items: center;
+}
+.videos__item {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    gap: 12px;
+
+    & .descripcion-video {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        text-align: start;
+
+        & .detalles__video {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            & h3 {
+                overflow: hidden;
+                display: block;
+                max-height: 4.4rem;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                white-space: normal;
+            }
+        }
+    }
+}
 @media screen and (min-width: 834px) {
     .cabecera__buscar__item {
         display: flex;
