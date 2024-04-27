@@ -72,7 +72,7 @@ function activateButton (current, desactivate = []) {
 function changeContext (context) {
   stopCounter({mute: true})
   $htmlRoot.setAttribute('data-contexto', context);
-  $bannerImage.setAttribute('src', `/imagenes/${context}.png`);
+  $bannerImage.setAttribute('src', `./imagenes/${context}.png`);
   $appTitle.innerHTML = changeTitle(context)
   timerValue = changeTime(context);
   LocalStorage.set('data-context', context);
