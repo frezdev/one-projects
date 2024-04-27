@@ -153,7 +153,7 @@ function StartOrPauseButton (state) {
   const imageName = state === 'pause' ? 'pause' : 'play_arrow';
   const label = state === 'pause' ? 'Detener' : 'Iniciar';
   return (/*html */`
-    <img class="app__card-primary-butto-icon" src="/imagenes/${imageName}.png" alt="">
+    <img class="app__card-primary-butto-icon" src="./imagenes/${imageName}.png" alt="">
     <span>${label}</span>
   `)
 }
