@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
@@ -163,8 +164,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding: 2.8rem 6rem;
     justify-content: center;
+    position: relative;
     align-items: center;
-    background: #010B15;
+    background: linear-gradient(transparent 40%, #010B15 80%);
 }
 
 .app__footer-text {
@@ -233,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 input[type="range"] {
     -webkit-appearance: none;
     height: 10px;
-    background: var(--color-primary);
+    background: #3f6d9b;
     border-radius: 5px;
     outline: none;
     margin: 0;
@@ -275,9 +277,11 @@ input[type=range]::-webkit-slider-thumb:hover {
 
     .app__title {
         font-size: 2.6rem;
+        padding-inline: 2rem;
     }
 
     .app__card-timer {
-        font-size: 6rem;
+        font-size: 5rem;
+        margin: 2rem 0;
     }
 }
