@@ -72,7 +72,7 @@ function activateButton (current, desactivate = []) {
 function changeContext (context) {
   stopCounter({mute: true})
   $htmlRoot.setAttribute('data-contexto', context);
-  $bannerImage.setAttribute('src', `./imagenes/${context}.png`);
+  $bannerImage.setAttribute('src', `./imagenes/${context}.webp`);
   $appTitle.innerHTML = changeTitle(context)
   timerValue = changeTime(context);
   LocalStorage.set('data-context', context);
@@ -153,7 +153,7 @@ function StartOrPauseButton (state) {
   const imageName = state === 'pause' ? 'pause' : 'play_arrow';
   const label = state === 'pause' ? 'Detener' : 'Iniciar';
   return (/*html */`
-    <img class="app__card-primary-butto-icon" src="./imagenes/${imageName}.png" alt="">
+    <img class="app__card-primary-butto-icon" src="./imagenes/${imageName}.webp" alt="">
     <span>${label}</span>
   `)
 }
