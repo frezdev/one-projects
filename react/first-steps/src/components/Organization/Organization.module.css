@@ -1,0 +1,95 @@
+.organization {
+  padding: var(--spacing-3) var(--spacing-14);
+  position: relative;
+
+  & .titleContainer {
+    display: flex;
+    justify-content: center;
+
+    & .title {
+      text-align: center;
+      margin-bottom: var(--spacing-3);
+      padding-block: var(--spacing-2);
+      font-weight: 600;
+      border-bottom: 4px solid;
+      font-family: var(--font-prata);
+      font-size: var(--size-4);
+      color: var(--gray-600);
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,220px));
+  gap: var(--spacing-3);
+  justify-content: center;
+  margin-top: var(--spacing-3);
+}
+
+.selectColorContainer {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  gap: 1rem;
+  position: absolute;
+  left: var(--spacing-4);
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  border: none;
+  padding: 2.5rem;
+  box-shadow: 3px 4px 8px #dbdbdb;
+  font-size: 1.6rem;
+  font-family: var(--font-montserrat);
+  background: var(--white);
+  color: var(--gray-600);
+  outline-color: var(--purple);
+
+  &::placeholder {
+    color: var(--gray-200);
+  }
+}
+.input[type="color"] {
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+
+  .button {
+    color: var(--white);
+    padding: .8rem;
+    max-width: fit-content;
+    font-family: var(--font-montserrat);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: color .2s;
+    /* box-shadow: 3px 3px 4px var(--purple); */
+    border: 1px solid var(--purple);
+
+    &:hover {
+      opacity: 70%;
+    }
+
+    &.btnPrimary {
+      background-color: var(--purple);
+
+    }
+    &.btnSecondary {
+      background-color: var(--white);
+      color: var(--purple);
+    }
+  }
+}

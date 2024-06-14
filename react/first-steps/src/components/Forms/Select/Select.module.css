@@ -1,0 +1,25 @@
+.label {
+  display: flex;
+  flex-direction: column;
+
+  & .labelTitle {
+    font-family: var(--font-montserrat);
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: var(--gray-600);
+  }
+}
+
+.select {
+  border: none;
+  padding: 2.5rem;
+  box-shadow: 3px 4px 8px #dbdbdb;
+  font-size: 1.6rem;
+  font-family: var(--font-montserrat);
+  color: var(--gray-200);
+  background: var(--white);
+  appearance: none;
+  outline-color: var(--purple);
+  display: grid;
+}

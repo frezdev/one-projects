@@ -1,0 +1,35 @@
+.conatiner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: var(--spacing-6) var(--spacing-14);
+  align-items: center;
+}
+
+.titleContainer {
+  border-bottom: 4px solid var(--purple);
+  padding-bottom: var(--spacing-3);
+
+  & h2 {
+    font-family: var(--font-prata);
+    color: var(--purple);
+    font-size: var(--spacing-4);
+  }
+}
+.buttonAddConatiner {
+  position: absolute;
+  right: var(--spacing-14);
+  display: flex;
+
+  & button {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    background-image: url(/icons/button-add.png);
+    background-position: center;
+    background-size: inherit;
+  }
+}

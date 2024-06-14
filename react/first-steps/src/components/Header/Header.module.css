@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--purple);
+  height: 80dvh;
+  max-height: 56rem;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacing-6) var(--spacing-14) var(--spacing-14);
+  background-image: url(/src/assets/images/HeaderHeader_total.webp);
+  position: relative;
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: bottom;
+  max-width: var(--max-w);
+  height: 100%;
+  margin: 0 auto;
+}
+.logo {
+  width: 19rem;
+  align-self: self-start;
+}
+
+.heroTitleContainer {
+  color: var(--white);
+  & h1 {
+    font-family: var(--font-prata);
+    font-size: var(--size-7);
+  }
+  & p {
+    font-family: var(--font-montserrat);
+    font-size: var(--size-4);
+  }
+
+  & p,
+  & h1 {
+    text-shadow: 2px 2px 0px var(--pink);
+    &::selection {
+      background-color: var(--aqua-green);
+      color: var(--purple);
+    }
+  }
+
+}
