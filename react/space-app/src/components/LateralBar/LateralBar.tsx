@@ -24,8 +24,8 @@ export function LateralBar() {
       <nav>
         <List>
           {
-            itemsData.map(({ iconActive, iconInactive, label }) => (
-              <NavItem key={label} iconActive={iconActive} iconInactive={iconInactive}>
+            itemsData.map(({ iconActive, iconInactive, label, href }) => (
+              <NavItem key={label} href={href} iconActive={iconActive} iconInactive={iconInactive}>
                 {label}
               </NavItem>
             ))

@@ -5,15 +5,17 @@ interface NavItemTypes {
   children: ReactNode
   iconActive: string
   iconInactive: string
-  isActive?: boolean
+  href: string
 }
 
-export function NavItem({ children, iconActive, iconInactive, isActive }: NavItemTypes) {
+export function NavItem({ children, iconActive, iconInactive, href }: NavItemTypes) {
+
+  const isActive = window.location.pathname === href
 
   const currentIcon = isActive ? iconActive : iconInactive;
   return (
-    <Container>
-      <a href=''>
+    <Container $isActive={isActive}>
+      <a href={href}>
         <img src={currentIcon} alt="" />
         {children}
       </a>
@@ -21,7 +23,11 @@ export function NavItem({ children, iconActive, iconInactive, isActive }: NavIte
   )
 }
 
-const Container = styled.li`
+interface ContainerProps {
+  $isActive?: boolean
+}
+
+const Container = styled.li<ContainerProps>`
   display: flex;
   gap: 10px;
   align-items: center;
@@ -36,6 +42,8 @@ const Container = styled.li`
       padding: 8px 10px;
       border-radius: 6px;
       width: 100%;
+      background: ${props => props.$isActive ? '#c98cf177' : 'transparent'};
+
       &:hover {
         background-color: #c98cf166;
       }
