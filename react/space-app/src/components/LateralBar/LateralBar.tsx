@@ -8,10 +8,9 @@ const Aside = styled.aside`
 
 const List = styled.ul`
   display: grid;
-  width: 220px;
-  gap: 10px;
+  gap: 1px;
   justify-items: start;
-  padding: 10px 20px;
+  padding: 20px;
 
   li {
     width: 100%;

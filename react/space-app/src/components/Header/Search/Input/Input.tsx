@@ -1,3 +1,5 @@
+import { usePhotosContext } from "@/hooks/usePhotosContext";
+import { useState } from "react";
 import styled from "styled-components";
 
 const Label = styled.label`
@@ -16,9 +18,24 @@ const StyledInput = styled.input`
   line-height: 20px;
 `
 export const Input = () => {
+  const { handleFilterPhotos } = usePhotosContext()
+  const [curretValue, setCurrentValue] = useState('')
+
+  const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = evt.target
+    handleFilterPhotos(value)
+    setCurrentValue(value)
+  }
+
   return (
     <Label htmlFor="search">
-      <StyledInput id="search" type="text" placeholder="Search..." />
+      <StyledInput
+        id="search"
+        type="text"
+        value={curretValue}
+        placeholder="Search..."
+        onChange={handleChange}
+      />
     </Label>
   )
 }

@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
   @font-face {
@@ -19,7 +21,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-family: 'GandhiSans'
+    font-family: 'GandhiSans';
+    font-size: 62.5%;
   }
   body {
     background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
